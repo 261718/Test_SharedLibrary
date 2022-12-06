@@ -5,7 +5,7 @@
 def call(String name, String dayofweek) {                  
 sh "echo Hello ${name}. Today is ${dayofweek}."
 }
-helloWorld("Sowmitri","Tuesday")   #call the function like this from pipeline
+helloWorld("Sowmitri","Tuesday")   
 
 // def call(String name, String dayofweek) {
     
