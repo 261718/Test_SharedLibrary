@@ -2,10 +2,17 @@
  // sh "echo Hello ${config.name}. Today is ${config.dayofweek}."
 // }
 
-def call(String name, String dayofweek) {                  
-sh "echo Hello ${name}. Today is ${dayofweek}."
+ //def call(String name, String dayofweek) {                  
+// sh "echo Hello ${name}. Today is ${dayofweek}."
+ // }
+// helloWorld("Sowmitri","Tuesday")  
+
+def call(Map config = [:]) {
+sh "echo Hello ${config.name}. Today is ${config.dayofweek}."
 }
-helloWorld("Sowmitri","Tuesday")   
+helloWorld(name: "Sowmitri", dayofweek: "Tuesday")  
+
+ 
 
 // def call(String name, String dayofweek) {
     
